@@ -1,1 +1,1 @@
-cd /var/www/level1
+cd /var/level1
