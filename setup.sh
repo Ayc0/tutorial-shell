@@ -4,14 +4,25 @@ adduser --shell /bin/zsh --disabled-password --gecos "" $1
 echo $1':'$2 | chpasswd 
 # usermod -aG sudo $1
 mv /var/users/login/*(D) /home/$1/
+rmdir /var/users/login/
 
-adduser --shell /bin/zsh --disabled-password --gecos "" level1
+for user in $(ls /var/users/); do 
+  adduser --shell /bin/zsh --disabled-password --gecos "" $user
+  mv /var/users/$user/*(D) /home/$user/
+  rmdir /var/users/$user/
+done
+
+rmdir /var/users/
+
+# Passwords
 echo "level1:let_me_pass_please" | chpasswd
+echo "level2:you_found_me_yeah" | chpasswd
+
 
 # Change rights to correct user
-for f in $(ls /home/); do 
-  chown -R "$f:$f" /home/$f/
-  chmod -R o=- /home/$f/
+for user in $(ls /home/); do 
+  chown -R "$user:$user" /home/$user/
+  chmod -R o=- /home/$user/
 done
 
 # Add ssh keys
