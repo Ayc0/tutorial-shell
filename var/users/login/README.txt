@@ -1,4 +1,4 @@
-Oh oh, you find me!
+Oh oh, you found me!
 
 To go to the next level, write this: "su level1"
 (su means "switch user")
