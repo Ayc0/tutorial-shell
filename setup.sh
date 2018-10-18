@@ -18,6 +18,7 @@ rmdir /var/users/
 echo "level1:let_me_pass_please" | chpasswd
 echo "level2:you_found_me_yeah" | chpasswd
 echo "level3:I_have_finally_reunited" | chpasswd
+echo "level4:399cb02b3ad8043989ec3a736394f851" | chpasswd
 
 # Level 2
 tar -cjf /home/level2/password.tar /home/level2/password
