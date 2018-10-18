@@ -5,5 +5,5 @@ Try to look what is in your SQLite database and to parse the CSV file
 
 We've created a small command "run" that allows you to run simple sql queries.
 For instance:
-* run "show tables"
-* run "select * from table"
+* 'run "show tables"' to list every tables
+* 'run "pragma table_info(<table_name>)"' to see the definition of a table

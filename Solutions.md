@@ -55,7 +55,7 @@ import sqlite3
 conn = sqlite3.connect('sqlite.db')
 
 c = conn.cursor()
-c.execute('Select text from data')
+c.execute('Select text_to_insert_in_file from data where is_useful=True')
 
 text = c.fetchone()[0]
 conn.close()
