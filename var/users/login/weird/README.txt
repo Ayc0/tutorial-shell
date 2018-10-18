@@ -8,3 +8,4 @@ Here are the commands that might be useful:
 * less (show file and can scroll in it)
 * cp (copy)
 * rm (remove)
+* pwd (print working directory)
