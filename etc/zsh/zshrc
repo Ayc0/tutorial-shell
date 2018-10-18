@@ -1,0 +1,92 @@
+alias ls='ls --color=auto -F -h'
+alias cp='cp --interactive'
+alias mv='mv --interactive'
+alias rm='rm -i'
+alias l='ls -la'
+alias ll='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias c='clear'
+alias s='cd ..'
+alias df='df -h'
+alias md='mkdir'
+alias rd='rmdir'
+bindkey ''    beginning-of-line       # Home
+bindkey '^K'		kill-line
+bindkey '^R'		history-incremental-search-backward
+bindkey ''    end-of-line             # End
+bindkey ''    delete-char             # Del
+bindkey '[3~' delete-char             # Del
+bindkey '[2~' overwrite-mode          # Insert
+bindkey '[5~' history-search-backward # PgUp
+bindkey '[6~' history-search-forward  # PgDn
+if [ "`id -u`" -eq 0 ]; then
+  export PS1="%{[36;1m%}%T %{[34m%}%n%{[33m%}@%{[37m%}%m %{[32m%}%~%{[33m%}%#%{[0m%} "
+else
+  export PS1="%{[36;1m%}%T %{[31m%}%n%{[33m%}@%{[37m%}%m %{[32m%}%~%{[33m%}%#%{[0m%} "
+fi
+  # Correspondance touches-fonction spécifique
+  bindkey '^[[1~' beginning-of-line       # Home
+  bindkey '^[[4~' end-of-line             # End
+  bindkey '\e[7~' beginning-of-line     # home
+  bindkey '\e[8~' end-of-line     # end
+  bindkey '\e[3~' delete-char # This should not be necessary!
+  bindkey '\e[2~' overwrite-mode      # Insert
+  # Correspondance touches-fonction spécifique
+  bindkey '[H'  beginning-of-line       # Home
+  bindkey '[F'  end-of-line             # End
+  # Correspondance touches-fonction spécifique
+  bindkey 'OH'  beginning-of-line       # Home
+  bindkey 'OF'  end-of-line             # End
+case $TERM in
+   xterm*|*rxvt*)
+       precmd () {print -Pn "\e]0;%n@%m: %~\a"}
+       ;;
+	
+esac
+if [ -x /usr/bin/dircolors ]
+then
+  if [ -r ~/.dir_colors ]
+  then
+    eval "`dircolors ~/.dir_colors`"
+  elif [ -r /etc/dir_colors ]
+  then
+    eval "`dircolors /etc/dir_colors`"
+  else
+    eval "`dircolors`"
+  fi
+fi
+unsetopt beep
+unsetopt hist_beep
+unsetopt list_beep
+unsetopt clobber
+unsetopt ignore_eof
+setopt print_exit_value
+unsetopt rm_star_silent
+unsetopt list_ambiguous
+setopt auto_remove_slash
+unsetopt glob_dots
+setopt nochaselinks
+setopt hist_verify
+setopt auto_cd
+setopt auto_pushd
+setopt pushd_ignore_dups
+setopt pushd_silent
+setopt pushd_to_home
+unsetopt bg_nice
+unsetopt hup
+export HISTORY=100000
+export SAVEHIST=100000
+export HISTSIZE=500
+export HISTFILE=$HOME/.zsh_history
+setopt inc_append_history
+setopt hist_ignore_dups
+setopt hist_expire_dups_first
+setopt hist_find_no_dups
+zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}'
+zstyle ':completion:*' max-errors 3 numeric
+zstyle ':completion:*' use-compctl false
+autoload -U compinit
+compinit
+setopt prompt_subst
+cd ~

@@ -1,0 +1,3 @@
+# Affiche des informations sur le système
+uname -a
+uptime
