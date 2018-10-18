@@ -1,10 +1,10 @@
 # SSI image for thuv
 
-## Files 
+## Files
 
- - Dockerfile, install packages and copies scripts/config
- - setup.sh , Dockerfile entrypoint, pass login|password as arguments of docker run
- - SSI_test.sh , Scenario of a user (run over ssh)
+- `Dockerfile`, install packages and copies scripts/config
+- `setup.sh`, Dockerfile entrypoint, pass login|password as arguments of docker run
+- `SSI_test.sh`, Scenario of a user (run over ssh)
 
 ## Commands
 
