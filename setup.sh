@@ -37,6 +37,7 @@ cd -
 cd /home/level4
 python3 importToSql.py
 rm importToSql.py
+chmod +x .diff
 cd -
 
 # Change rights to correct user

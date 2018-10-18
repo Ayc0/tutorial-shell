@@ -1,2 +1,2 @@
-alias diff="echo 'we have added the flag --unchanged-line-format= ' && diff --unchanged-line-format= "
+alias diff="$HOME/.diff"
 alias python="python3"
