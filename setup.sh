@@ -25,11 +25,14 @@ echo "level3:I_have_finally_reunited" | chpasswd
 echo "level4:399cb02b3ad8043989ec3a736394f851" | chpasswd
 
 # Level 2
-tar -cjf /home/level2/password.tar /home/level2/password
-split -b 50 -a 1 /home/level2/password.tar "/home/level2/password.tar.part."
-rm -f /home/level2/password /home/level2/password.tar
-mv /home/level2/password.tar.part.d /home/level2/foo/bar/missing_part.yolo
-chmod +x /home/level2/unzip.sh
+cd /home/level2
+tar -cjf password.tar password
+split -b 50 -a 1 password.tar "password.tar.part."
+rm -f password password.tar
+mv password.tar.part.d foo/bar/missing_part.yolo
+chmod +x unzip.sh
+cd -
+
 
 # Change rights to correct user
 for user in $(ls /home/); do 
