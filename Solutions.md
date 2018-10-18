@@ -35,7 +35,7 @@ Correct file
 ```python
 import hashlib
 
-hash = hashlib.md5()
+hash = hashlib.sha3_256()
 hash.update("No one expects".encode("utf-8"))
 hash.update(" the spanish inquisition".encode("utf-8"))
 
@@ -43,7 +43,7 @@ print(hash.hexdigest())
 ```
 
 ```zsh
-su level4 (399cb02b3ad8043989ec3a736394f851)
+su level4 (dfb7df1c9c530db5babda231838691bcf6ed022611cda1a899ccc12b651ff9f3)
 ```
 
 **Level 4:**

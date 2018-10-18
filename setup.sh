@@ -22,7 +22,7 @@ rmdir /var/users/
 echo "level1:let_me_pass_please" | chpasswd
 echo "level2:you_found_me_yeah" | chpasswd
 echo "level3:I_have_finally_reunited" | chpasswd
-echo "level4:399cb02b3ad8043989ec3a736394f851" | chpasswd
+echo "level4:dfb7df1c9c530db5babda231838691bcf6ed022611cda1a899ccc12b651ff9f3" | chpasswd
 
 # Level 2
 cd /home/level2
