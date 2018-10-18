@@ -1,1 +1,5 @@
-Test 2
+Oh oh, you find me!
+
+To go to the next level, write this: "su level1"
+
+You'll be asked to fill in a password, write "let_me_pass_please"

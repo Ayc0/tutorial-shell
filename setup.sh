@@ -6,7 +6,7 @@ echo $1':'$2 | chpasswd
 mv /var/users/login/*(D) /home/$1/
 
 adduser --shell /bin/zsh --disabled-password --gecos "" level1
-echo "level1:sdrtygHMLlkjhgfd" | chpasswd
+echo "level1:let_me_pass_please" | chpasswd
 
 # Change rights to correct user
 for f in $(ls /home/); do 
