@@ -1,0 +1,4 @@
+Try to look what is in your SQLite database and to parse the CSV file
+
+* https://docs.python.org/3/library/sqlite3.html
+* https://docs.python.org/3/library/csv.html

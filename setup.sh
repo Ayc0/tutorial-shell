@@ -33,6 +33,11 @@ mv password.tar.part.d foo/bar/missing_part.yolo
 chmod +x unzip.sh
 cd -
 
+# Level 4
+cd /home/level4
+python3 importToSql.py
+rm importToSql.py
+cd -
 
 # Change rights to correct user
 for user in $(ls /home/); do 
