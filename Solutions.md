@@ -75,6 +75,7 @@ with open("./data.csv") as csv_file:
   text = ''
   for row in csv_reader:
     text += row[3] + "\n"
+
 with open("./b.txt", "w") as file:
     file.write(text)
 ```
