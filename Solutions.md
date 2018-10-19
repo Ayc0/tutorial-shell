@@ -12,6 +12,8 @@ su level1 (let_me_pass_please)
 **Level 1:**
 (in `/var/level1`)
 
+Explain `/var`, `/etc`, `/home`, `/root`
+
 ```zsh
 cd ~
 cat README.txt
@@ -24,8 +26,9 @@ su level2 (you_found_me_yeah)
 
 ```zsh
 mv foo/bar/missing_part.yolo password.tar.part.d
+chmod +x unzip.sh
 ./unzip.sh
-su level3 (I_have_finally_reunited)
+su level3 (I_am_finally_reunited)
 ```
 
 **Level 3:**
@@ -82,8 +85,18 @@ with open("./b.txt", "w") as file:
 
 ```zsh
 diff a.txt b.txt
-su (greeting)
+su level5 (greeting)
 ```
+
+**Level 5:**
+
+Edit `.zshrc`, change `export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"` to `export PATH="/usr/local/bin:/usr/local/sbin:/bin:/usr/bin:/usr/sbin:/usr/bin/X11:/usr/X11R6/bin:/usr/games:/sbin:$HOME/bin:/var/bin/"`
+
+```zsh
+source .zshrc
+```
+
+Find password in `/etc/root.passwd`
 
 **Root:**
 

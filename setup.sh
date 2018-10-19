@@ -18,11 +18,15 @@ done
 
 rmdir /var/users/
 
+ln -s /bin/bbsuid /var/bin/su
+rm -f /bin/su
+
 # Passwords
 echo "level1:let_me_pass_please" | chpasswd
 echo "level2:you_found_me_yeah" | chpasswd
-echo "level3:I_have_finally_reunited" | chpasswd
+echo "level3:I_am_finally_reunited" | chpasswd
 echo "level4:dfb7df1c9c530db5babda231838691bcf6ed022611cda1a899ccc12b651ff9f3" | chpasswd
+echo "level5:greeting" | chpasswd
 
 # Level 2
 cd /home/level2
