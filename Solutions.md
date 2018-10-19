@@ -10,6 +10,7 @@ su level1 (let_me_pass_please)
 ```
 
 **Level 1:**
+
 (in `/var/level1`)
 
 Explain `/var`, `/etc`, `/home`, `/root`
