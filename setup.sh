@@ -30,7 +30,6 @@ tar -cjf password.tar password
 split -b 50 -a 1 password.tar "password.tar.part."
 rm -f password password.tar
 mv password.tar.part.d foo/bar/missing_part.yolo
-chmod +x unzip.sh
 cd -
 
 # Level 4
