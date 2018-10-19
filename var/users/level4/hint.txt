@@ -7,3 +7,5 @@ We've created a small command "run" that allows you to run simple sql queries.
 For instance:
 * 'run "show tables"' to list every tables
 * 'run "pragma table_info(<table_name>)"' to see the definition of a table
+
+Try to find which column is useful is the CSV file.

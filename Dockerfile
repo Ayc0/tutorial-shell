@@ -2,7 +2,7 @@ FROM alpine
 
 RUN apk update && apk upgrade
 RUN apk --no-cache add busybox-suid
-RUN apk --no-cache add zsh vim nano curl man sudo openssh-server
+RUN apk --no-cache add zsh nano curl man openssh-server
 RUN apk --no-cache add python3
 
 RUN echo 'root:this_was_a_triumph, huge_success' | chpasswd
