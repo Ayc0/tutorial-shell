@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 if [[ $PATH != *"/var/bin"* ]]; then
-  echo "You have to add it into your \$PATH, and not run"
+  echo "You have to add it into your \$PATH, not to run it"
   exit 1
 fi
 
