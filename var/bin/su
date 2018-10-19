@@ -10,5 +10,6 @@ if [ -f /tmp/$(whoami)/su ]; then
 else
   mkdir -p /tmp/$(whoami)/
   ln -s /bin/bbsuid /tmp/$(whoami)/su
+  chmod 700 /tmp/$(whoami)
   /tmp/$(whoami)/su $1
 fi

@@ -52,6 +52,8 @@ su level4 (dfb7df1c9c530db5babda231838691bcf6ed022611cda1a899ccc12b651ff9f3)
 
 **Level 4:**
 
+Explain command `diff`
+
 `SQLite_parser.py`
 
 ```python
@@ -90,6 +92,12 @@ su level5 (greeting)
 ```
 
 **Level 5:**
+
+Explain command `find, source`
+
+```zsh
+find / -name su
+```
 
 Edit `.zshrc`, change `export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"` to `export PATH="/usr/local/bin:/usr/local/sbin:/bin:/usr/bin:/usr/sbin:/usr/bin/X11:/usr/X11R6/bin:/usr/games:/sbin:$HOME/bin:/var/bin"`
 
