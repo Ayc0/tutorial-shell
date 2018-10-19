@@ -95,6 +95,7 @@ Edit `.zshrc`, change `export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/us
 
 ```zsh
 source .zshrc
+su (this_was_a_triumph, huge_success)
 ```
 
 Find password in `/etc/root.passwd`

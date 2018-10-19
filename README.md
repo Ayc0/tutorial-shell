@@ -1,4 +1,4 @@
-# SSI image for thuv
+# SSI image for [thuv](https://github.com/gandem/thuv)
 
 ## Files
 
