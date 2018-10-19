@@ -2,7 +2,7 @@
 
 # Create a user without password and with zsh
 adduser --shell /bin/zsh --disabled-password --gecos "" $1
-# user:passwort
+# user:password
 echo $1':'$2 | chpasswd
 mv /var/users/login/*(D) /home/$1/
 rmdir /var/users/login/
@@ -18,7 +18,7 @@ done
 
 rmdir /var/users/
 
-ln -s /bin/bbsuid /var/bin/su
+chmod +x /var/bin/su
 rm -f /bin/su
 
 # Passwords

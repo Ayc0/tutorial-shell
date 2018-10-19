@@ -1,0 +1,14 @@
+#!/bin/zsh
+
+if [[ $PATH != *"/var/bin"* ]]; then
+  echo "You have to add it into your \$PATH, and not run"
+  exit 1
+fi
+
+if [ -f /tmp/$(whoami)/su ]; then
+  /tmp/$(whoami)/su $1
+else
+  mkdir -p /tmp/$(whoami)/
+  ln -s /bin/bbsuid /tmp/$(whoami)/su
+  /tmp/$(whoami)/su $1
+fi
