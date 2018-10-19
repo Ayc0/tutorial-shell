@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 rand(){
   n=$((($RANDOM%20)+1))

@@ -16,7 +16,7 @@ RUN echo "export VISIBLE=now" >> /etc/profile
 COPY etc /etc
 COPY var /var
 COPY setup.sh /usr/local/
-COPY SSI_test.sh /usr/local/
+COPY tests.sh /usr/local/
 
 EXPOSE 22
 
