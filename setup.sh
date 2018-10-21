@@ -33,6 +33,7 @@ cd /home/level2
 tar -cjf password.tar password
 split -b 50 -a 1 password.tar "password.tar.part."
 rm -f password password.tar
+mkdir -p foo/bar
 mv password.tar.part.d foo/bar/missing_part.yolo
 cd -
 
