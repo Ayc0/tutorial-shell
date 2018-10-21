@@ -13,3 +13,4 @@ Works with [thuv](https://github.com/gandem/thuv).
 - Build: `docker build -t shell_tuto .`
 - Run: `docker run -it --rm -p 3000:22 shell_tuto <login> <passwd>`
 - SSH: `ssh -p 3000 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null <login>@0.0.0.0`
+- To run tests: `ssh -p 3000 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -t tests@0.0.0.0 '~/tests.sh'`

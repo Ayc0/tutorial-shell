@@ -8,3 +8,4 @@ Also, you can star these repositories:
 * https://github.com/gandem/thuv
 * https://github.com/Ayc0/tutorial-shell
 
+There is an easter egg hidden within this game, can you find it?

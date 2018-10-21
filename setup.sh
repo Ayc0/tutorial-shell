@@ -27,6 +27,7 @@ echo "level2:you_found_me_yeah" | chpasswd
 echo "level3:I_am_finally_reunited" | chpasswd
 echo "level4:dfb7df1c9c530db5babda231838691bcf6ed022611cda1a899ccc12b651ff9f3" | chpasswd
 echo "level5:greeting" | chpasswd
+echo "tests:vghjhy7^&uhgtr%6789okiUYTr456y" | chpasswd
 
 # Level 2
 cd /home/level2
@@ -39,8 +40,8 @@ cd -
 
 # Level 4
 cd /home/level4
-python3 importToSql.py
-rm importToSql.py
+python3 setup.py
+rm -f setup.py toSql.txt
 chmod +x .diff
 chmod +x .run.py
 cd -
