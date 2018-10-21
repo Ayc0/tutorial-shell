@@ -46,6 +46,9 @@ chmod +x .diff
 chmod +x .run.py
 cd -
 
+# Bonus 
+chmod +x /home/bonus/answer.sh
+
 # Change rights to correct user
 for user in $(ls /home/); do 
   chown -R "$user:$user" /home/$user/
