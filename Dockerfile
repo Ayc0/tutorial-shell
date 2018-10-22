@@ -14,7 +14,8 @@ RUN echo "export VISIBLE=now" >> /etc/profile
 COPY etc /etc
 COPY var /var
 COPY setup.sh /usr/local/
+COPY run.sh /usr/local/
 
 EXPOSE 22
 
-ENTRYPOINT ["zsh", "/usr/local/setup.sh"]
+ENTRYPOINT ["zsh", "/usr/local/run.sh"]

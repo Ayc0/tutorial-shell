@@ -46,6 +46,10 @@ chmod +x .diff
 chmod +x .run.py
 cd -
 
+# Level 5
+chown level5:level5 /etc/root.passwd
+chmod 400 /etc/root.passwd
+
 # Bonus 
 chmod +x /home/bonus/answer.sh
 
@@ -57,6 +61,3 @@ done
 
 # Add ssh keys
 ssh-keygen -A
-
-# Start ssh server
-/usr/sbin/sshd -D
