@@ -1,3 +1,0 @@
-* Load the real data from the CSV and from SQLite
-* Store those into two different files, "a.txt" and "b.txt", one character per line
-* Compare the two files with the command "diff"
