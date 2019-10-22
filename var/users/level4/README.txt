@@ -11,3 +11,9 @@ And also, we created a small command "run" that allows you to run simple sql que
 For instance:
 * 'run "show tables"' to list every tables
 * 'run "pragma table_info(<table_name>)"' to see the definition of a table
+
+Here are the commands that might be useful:
+* ls (list: show content of a folder)
+* python (execute python file)
+* run (custom: execute sql command)
+* diff (difference between 2 files)
