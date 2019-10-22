@@ -1,0 +1,4 @@
+Write 2 simple python files "csv.py" and "sqlite.py".
+
+Both of them have to find the useful data hidden in the CSV/SQLite database
+and write the output in an external file "csv.txt" / "sql.txt"
