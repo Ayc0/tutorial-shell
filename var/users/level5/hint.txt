@@ -1,1 +1,4 @@
-Use the command "find"
+* /var contains variable data
+* /etc contains global configuration (like /etc/passwd with the list of users and /etc/shadows with the list of passwords)
+* /usr/bin (in addition to other similar folders like /bin) contains binaries
+* /tmp contains temporary files that can be deleted automatically when you logout
