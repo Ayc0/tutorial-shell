@@ -1,3 +1,3 @@
 * Load the real data from the CSV and from SQLite
-* Store those into two different files, "csv.txt" and "sql.txt", one character per line
+* Store those into two different files, "csv-parser.txt" and "sql-parser.txt", one character per line
 * Compare the two files with the command "diff"
